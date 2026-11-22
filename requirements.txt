@@ -1,0 +1,7 @@
+google-genai
+python-dotenv
+pydantic
+requests
+streamlit
+pillow
+jinja2

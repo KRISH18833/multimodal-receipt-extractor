@@ -1,0 +1,44 @@
+{
+  "image": "samples\\tamil_hindi.jpg",
+  "prompt_version": "v2",
+  "extraction": {
+    "document_type": "receipt",
+    "merchant": "தமிழ்நாடு அரசு போக்குவரத்து கழகம் (சேலம்) வரை. சேலம்-7",
+    "date": null,
+    "currency": "INR",
+    "items": [],
+    "subtotal": null,
+    "tax": null,
+    "total": 4.0,
+    "confidence": {
+      "merchant": 0.9,
+      "date": 0.0,
+      "currency": 0.8,
+      "items": 0.0,
+      "subtotal": 0.0,
+      "tax": 0.0,
+      "total": 0.8
+    },
+    "uncertain_fields": [
+      "currency",
+      "total"
+    ],
+    "notes": "The merchant is Tamil Nadu State Transport Corporation (Salem) Limited, Salem-7. The amount printed is 400 காசுகள் (400 Paise = 4 INR)."
+  },
+  "validation": {
+    "status": "review",
+    "field_status": {
+      "merchant": "high",
+      "date": "missing",
+      "currency": "medium",
+      "items": "missing",
+      "subtotal": "missing",
+      "tax": "missing",
+      "total": "medium"
+    },
+    "issues": [
+      "Model flagged uncertain: currency, total"
+    ],
+    "items_sum": 0.0
+  }
+}

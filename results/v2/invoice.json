@@ -1,0 +1,41 @@
+{
+  "image": "samples\\invoice.jpg",
+  "prompt_version": "v2",
+  "extraction": {
+    "document_type": "invoice",
+    "merchant": null,
+    "date": null,
+    "currency": "INR",
+    "items": [],
+    "subtotal": null,
+    "tax": null,
+    "total": null,
+    "confidence": {
+      "merchant": 0.0,
+      "date": 0.0,
+      "currency": 0.9,
+      "items": 0.0,
+      "subtotal": 0.0,
+      "tax": 0.0,
+      "total": 0.0
+    },
+    "uncertain_fields": [],
+    "notes": "This is a blank performa invoice form with only the 'Amount in Words' field filled out."
+  },
+  "validation": {
+    "status": "review",
+    "field_status": {
+      "merchant": "missing",
+      "date": "missing",
+      "currency": "high",
+      "items": "missing",
+      "subtotal": "missing",
+      "tax": "missing",
+      "total": "missing"
+    },
+    "issues": [
+      "Total is missing."
+    ],
+    "items_sum": 0.0
+  }
+}

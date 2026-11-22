@@ -1,0 +1,43 @@
+{
+  "image": "samples\\tamil_hindi.jpg",
+  "prompt_version": "v1",
+  "extraction": {
+    "document_type": "receipt",
+    "merchant": "தமிழ்நாடு அரசு போக்குவரத்துக் கழகம் (சேலம்)",
+    "date": null,
+    "currency": "INR",
+    "items": [],
+    "subtotal": null,
+    "tax": null,
+    "total": 4.0,
+    "confidence": {
+      "merchant": 0.9,
+      "date": 1.0,
+      "currency": 0.8,
+      "items": 1.0,
+      "subtotal": 1.0,
+      "tax": 1.0,
+      "total": 0.85
+    },
+    "uncertain_fields": [
+      "total"
+    ],
+    "notes": "Tamil Nadu State Transport Corporation bus ticket (Denomination: 400 Paise = 4.00 INR)."
+  },
+  "validation": {
+    "status": "review",
+    "field_status": {
+      "merchant": "high",
+      "date": "missing",
+      "currency": "medium",
+      "items": "missing",
+      "subtotal": "missing",
+      "tax": "missing",
+      "total": "medium"
+    },
+    "issues": [
+      "Model flagged uncertain: total"
+    ],
+    "items_sum": 0.0
+  }
+}

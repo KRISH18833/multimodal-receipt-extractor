@@ -1,0 +1,50 @@
+{
+  "image": "samples\\handwritten.jpg",
+  "prompt_version": "v1",
+  "extraction": {
+    "document_type": "receipt",
+    "merchant": "Bull & Gate Inn",
+    "date": "1886-04-01",
+    "currency": "GBP",
+    "items": [
+      {
+        "name": "Deposit and in part payment on the purchase of the Bull & Gate Inn",
+        "qty": 1.0,
+        "price": 5.0
+      }
+    ],
+    "subtotal": null,
+    "tax": null,
+    "total": 5.0,
+    "confidence": {
+      "merchant": 0.8,
+      "date": 0.6,
+      "currency": 0.95,
+      "items": 0.85,
+      "subtotal": 1.0,
+      "tax": 1.0,
+      "total": 0.9
+    },
+    "uncertain_fields": [
+      "date",
+      "merchant"
+    ],
+    "notes": "Document is a handwritten receipt from 1886 for a £5 deposit on the £880 purchase of the Bull & Gate Inn, to be completed on or before 1886-04-01."
+  },
+  "validation": {
+    "status": "review",
+    "field_status": {
+      "merchant": "medium",
+      "date": "medium",
+      "currency": "high",
+      "items": "high",
+      "subtotal": "missing",
+      "tax": "missing",
+      "total": "high"
+    },
+    "issues": [
+      "Model flagged uncertain: date, merchant"
+    ],
+    "items_sum": 5.0
+  }
+}

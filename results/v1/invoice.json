@@ -1,0 +1,43 @@
+{
+  "image": "samples\\invoice.jpg",
+  "prompt_version": "v1",
+  "extraction": {
+    "document_type": "invoice",
+    "merchant": null,
+    "date": null,
+    "currency": "INR",
+    "items": [],
+    "subtotal": null,
+    "tax": null,
+    "total": 2919.0,
+    "confidence": {
+      "merchant": 0.0,
+      "date": 0.0,
+      "currency": 0.9,
+      "items": 0.9,
+      "subtotal": 0.0,
+      "tax": 0.0,
+      "total": 0.8
+    },
+    "uncertain_fields": [
+      "total"
+    ],
+    "notes": null
+  },
+  "validation": {
+    "status": "review",
+    "field_status": {
+      "merchant": "missing",
+      "date": "missing",
+      "currency": "high",
+      "items": "missing",
+      "subtotal": "missing",
+      "tax": "missing",
+      "total": "medium"
+    },
+    "issues": [
+      "Model flagged uncertain: total"
+    ],
+    "items_sum": 0.0
+  }
+}

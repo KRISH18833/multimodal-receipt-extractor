@@ -1,0 +1,71 @@
+{
+  "image": "samples\\hard_blur.jpg",
+  "prompt_version": "v2",
+  "extraction": {
+    "document_type": "receipt",
+    "merchant": "Berghotel Grosse Scheidegg",
+    "date": "2007-07-30",
+    "currency": "CHF",
+    "items": [
+      {
+        "name": null,
+        "qty": null,
+        "price": 4.5
+      },
+      {
+        "name": null,
+        "qty": null,
+        "price": 5.0
+      },
+      {
+        "name": null,
+        "qty": null,
+        "price": 22.0
+      },
+      {
+        "name": null,
+        "qty": null,
+        "price": 16.5
+      }
+    ],
+    "subtotal": null,
+    "tax": null,
+    "total": 54.5,
+    "confidence": {
+      "merchant": 0.6,
+      "date": 0.5,
+      "currency": 0.6,
+      "items": 0.3,
+      "subtotal": 0.0,
+      "tax": 0.0,
+      "total": 0.6
+    },
+    "uncertain_fields": [
+      "merchant",
+      "date",
+      "currency",
+      "items",
+      "tax",
+      "total"
+    ],
+    "notes": "The image is severely out of focus, making the text extremely blurry. Berghotel Grosse Scheidegg translates to Mountain Hotel Grosse Scheidegg."
+  },
+  "validation": {
+    "status": "review",
+    "field_status": {
+      "merchant": "medium",
+      "date": "low",
+      "currency": "medium",
+      "items": "low",
+      "subtotal": "missing",
+      "tax": "missing",
+      "total": "low"
+    },
+    "issues": [
+      "Item sum (48.0) does not match any of: [54.5]",
+      "Low confidence fields: date, items, total",
+      "Model flagged uncertain: merchant, date, currency, items, tax, total"
+    ],
+    "items_sum": 48.0
+  }
+}

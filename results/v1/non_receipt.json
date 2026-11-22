@@ -1,0 +1,41 @@
+{
+  "image": "samples\\non_receipt.jpg",
+  "prompt_version": "v1",
+  "extraction": {
+    "document_type": "not_a_document",
+    "merchant": null,
+    "date": null,
+    "currency": null,
+    "items": [],
+    "subtotal": null,
+    "tax": null,
+    "total": null,
+    "confidence": {
+      "merchant": 0.0,
+      "date": 0.0,
+      "currency": 0.0,
+      "items": 0.0,
+      "subtotal": 0.0,
+      "tax": 0.0,
+      "total": 0.0
+    },
+    "uncertain_fields": [],
+    "notes": "The provided image is a scenic photo of a mountain lake landscape, not a receipt or document."
+  },
+  "validation": {
+    "status": "reject",
+    "field_status": {
+      "merchant": "missing",
+      "date": "missing",
+      "currency": "missing",
+      "items": "missing",
+      "subtotal": "missing",
+      "tax": "missing",
+      "total": "missing"
+    },
+    "issues": [
+      "Image is not a receipt or invoice."
+    ],
+    "items_sum": null
+  }
+}

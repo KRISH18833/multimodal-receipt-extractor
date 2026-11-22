@@ -1,0 +1,60 @@
+{
+  "image": "samples\\test1.jpg",
+  "prompt_version": "v1",
+  "extraction": {
+    "document_type": "receipt",
+    "merchant": "Berghotel Grosse Scheidegg",
+    "date": "2007-07-30",
+    "currency": "CHF",
+    "items": [
+      {
+        "name": "Latte Macchiato",
+        "qty": 2.0,
+        "price": 9.0
+      },
+      {
+        "name": "Gloki",
+        "qty": 1.0,
+        "price": 5.0
+      },
+      {
+        "name": "Schweinschnitzel",
+        "qty": 1.0,
+        "price": 22.0
+      },
+      {
+        "name": "Chässpätzli",
+        "qty": 1.0,
+        "price": 18.5
+      }
+    ],
+    "subtotal": null,
+    "tax": 3.85,
+    "total": 54.5,
+    "confidence": {
+      "merchant": 0.98,
+      "date": 0.99,
+      "currency": 0.99,
+      "items": 0.98,
+      "subtotal": 0.95,
+      "tax": 0.98,
+      "total": 0.99
+    },
+    "uncertain_fields": [],
+    "notes": null
+  },
+  "validation": {
+    "status": "ok",
+    "field_status": {
+      "merchant": "high",
+      "date": "high",
+      "currency": "high",
+      "items": "high",
+      "subtotal": "missing",
+      "tax": "high",
+      "total": "high"
+    },
+    "issues": [],
+    "items_sum": 63.5
+  }
+}
